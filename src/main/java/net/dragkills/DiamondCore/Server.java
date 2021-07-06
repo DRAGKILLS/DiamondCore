@@ -37,16 +37,11 @@ public class Server
         TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {
-                tick();
+                //NOP
             }
         };
         Timer timer = new Timer("main");
         timer.scheduleAtFixedRate(timerTask, 50, 50);
-    }
-
-    public void tick()
-    {
-        //NOP
     }
 
     public Server getServer()
