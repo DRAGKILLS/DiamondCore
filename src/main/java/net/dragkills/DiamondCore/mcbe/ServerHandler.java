@@ -28,9 +28,9 @@ public class ServerHandler implements BedrockServerEventHandler {
     public BedrockPong onQuery(InetSocketAddress address) {
         BedrockPong pong = new BedrockPong();
         pong.setEdition("MCPE");
-        pong.setMotd("DiamondCore Server");
+        pong.setMotd("§l§bDiamondCore Server");
         pong.setPlayerCount(Server.players.size());
-        pong.setMaximumPlayerCount(10);
+        pong.setMaximumPlayerCount(20);
         pong.setGameType("Survival");
         pong.setVersion("1.17.0");
         pong.setProtocolVersion(Bedrock_v440.V440_CODEC.getProtocolVersion());
@@ -38,7 +38,7 @@ public class ServerHandler implements BedrockServerEventHandler {
         pong.setIpv6Port(19132);
         pong.setNintendoLimited(false);
         pong.setMaximumPlayerCount(100);
-        pong.setSubMotd("DiamondCore server");
+        pong.setSubMotd("§l§bDiamondCore server");
         return pong;
     }
 
