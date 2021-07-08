@@ -30,7 +30,6 @@ public class ServerHandler implements BedrockServerEventHandler {
         pong.setEdition("MCPE");
         pong.setMotd("§l§bDiamondCore Server");
         pong.setPlayerCount(Server.players.size());
-        pong.setMaximumPlayerCount(20);
         pong.setGameType("Survival");
         pong.setVersion("1.17.0");
         pong.setProtocolVersion(Bedrock_v440.V440_CODEC.getProtocolVersion());
