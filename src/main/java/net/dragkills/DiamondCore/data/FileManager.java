@@ -9,25 +9,15 @@ import java.util.zip.GZIPInputStream;
 public class FileManager {
 
     public static String getFileResource(String name) {
-        try {
-            ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-            InputStream in = classloader.getResourceAsStream(name);
-            if(in == null) return null;
-            return new String(in.readAllBytes());
-        } catch (Exception ignored) {
-        }
-
-        return null;
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+        InputStream in = classloader.getResourceAsStream(name);
+        if(in == null) return null;
+        return new String(in.readAllBytes());
     }
 
     public static InputStream getFileResourceAsInputStream(String name) {
-        try {
-            ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-            return classloader.getResourceAsStream(name);
-        } catch (Exception ignored) {
-        }
-
-        return null;
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+        return classloader.getResourceAsStream(name);
     }
 
     public static String getFileContents(InputStream inputStream) throws Exception {
