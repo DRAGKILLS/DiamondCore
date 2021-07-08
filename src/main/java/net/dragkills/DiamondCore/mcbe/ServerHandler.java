@@ -36,7 +36,7 @@ public class ServerHandler implements BedrockServerEventHandler {
         pong.setIpv4Port(19132);
         pong.setIpv6Port(19132);
         pong.setNintendoLimited(false);
-        pong.setMaximumPlayerCount(100);
+        pong.setMaximumPlayerCount(20);
         pong.setSubMotd("§l§bDiamondCore server");
         return pong;
     }
@@ -50,7 +50,7 @@ public class ServerHandler implements BedrockServerEventHandler {
 
     @Override
     public void onSessionCreation(BedrockServerSession serverSession) {
-        if(Server.players.size() > 100) {
+        if(Server.players.size() > 20) {
             serverSession.sendPacketImmediately(createDisconnect("Server full!"));
             serverSession.disconnect();
             return;
