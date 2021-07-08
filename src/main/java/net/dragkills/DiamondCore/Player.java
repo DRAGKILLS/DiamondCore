@@ -113,9 +113,8 @@ public class Player {
         setPlayerFlag(EntityFlag.ALWAYS_SHOW_NAME, true);
         setPlayerFlag(EntityFlag.BLOCKING, true);
         setPlayerFlag(EntityFlag.CAN_SWIM, true);
-        //when i make the generator i will enable this
-        //setPlayerFlag(EntityFlag.MOVING, true);
-        //setPlayerFlag(EntityFlag.CAN_WALK, true);
+        setPlayerFlag(EntityFlag.MOVING, true);
+        setPlayerFlag(EntityFlag.CAN_WALK, true);
     }
 
     public boolean handleChat(String message)
