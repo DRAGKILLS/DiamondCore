@@ -31,7 +31,7 @@ public class ServerHandler implements BedrockServerEventHandler {
         pong.setMotd("§l§bDiamondCore Server");
         pong.setPlayerCount(Server.players.size());
         pong.setGameType("Survival");
-        pong.setVersion("1.17.0");
+        pong.setVersion("1.17.10");
         pong.setProtocolVersion(Bedrock_v440.V440_CODEC.getProtocolVersion());
         pong.setIpv4Port(19132);
         pong.setIpv6Port(19132);
