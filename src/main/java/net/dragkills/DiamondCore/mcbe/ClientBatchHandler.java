@@ -51,7 +51,7 @@ public class ClientBatchHandler implements BatchHandler {
 
     public boolean handlePacket(BedrockPacket packet) {
         if(packet instanceof LoginPacket) {
-            if(((LoginPacket) packet).getProtocolVersion() != 440) {
+            if(((LoginPacket) packet).getProtocolVersion() != 448) {
                 session.sendPacketImmediately(player.getServerHandler().createDisconnect("Please use Minecraft v1.17.0 (Protocol 440) to join this server."));
                 session.disconnect();
                 return true;
@@ -72,7 +72,7 @@ public class ClientBatchHandler implements BatchHandler {
         if(packet instanceof ResourcePackClientResponsePacket) {
             if(((ResourcePackClientResponsePacket) packet).getStatus() == ResourcePackClientResponsePacket.Status.HAVE_ALL_PACKS) {
                 ResourcePackStackPacket packStackPacket = new ResourcePackStackPacket();
-                packStackPacket.setGameVersion("1.17.0");
+                packStackPacket.setGameVersion("1.17.10");
                 packStackPacket.setExperimentsPreviouslyToggled(false);
                 packStackPacket.setForcedToAccept(false);
                 session.sendPacket(packStackPacket);
