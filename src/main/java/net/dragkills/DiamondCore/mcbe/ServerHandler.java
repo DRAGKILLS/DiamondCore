@@ -4,7 +4,7 @@ import com.nukkitx.protocol.bedrock.BedrockPong;
 import com.nukkitx.protocol.bedrock.BedrockServerEventHandler;
 import com.nukkitx.protocol.bedrock.BedrockServerSession;
 import com.nukkitx.protocol.bedrock.packet.DisconnectPacket;
-import com.nukkitx.protocol.bedrock.v440.Bedrock_v440;
+import com.nukkitx.protocol.bedrock.v448.Bedrock_v448;
 import net.dragkills.DiamondCore.Player;
 import net.dragkills.DiamondCore.Server;
 import net.dragkills.DiamondCore.log.Logger;
