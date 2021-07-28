@@ -56,7 +56,7 @@ public class ClientBatchHandler implements BatchHandler {
                 session.disconnect();
                 return true;
             }
-            session.setPacketCodec(Bedrock_v440.V440_CODEC);
+            session.setPacketCodec(Bedrock_v448.V448_CODEC);
 
             PlayStatusPacket status = new PlayStatusPacket();
             status.setStatus(PlayStatusPacket.Status.LOGIN_SUCCESS);
