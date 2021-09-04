@@ -9,6 +9,7 @@ This is not playable
 Join DiamondCore discord server for latest updates
 
 * __[Discord](https://discord.gg/SWZKcPBmpD)__
+
 <--
 
 #### This Project Archived and moved to Anarchy-BE
