@@ -1,6 +1,6 @@
 # DiamondCore
 
-<--
+<!--
 
 This is a server software for Minecraft bedrock
 
@@ -11,6 +11,6 @@ Join DiamondCore discord server for latest updates
 
 * __[Discord](https://discord.gg/SWZKcPBmpD)__
 
--->
+--!>
 
 #### This Project Archived and moved to Anarchy-BE
